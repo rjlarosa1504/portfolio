@@ -66,3 +66,13 @@ plt.xlabel("Random Forest Number of Leafs")
 plt.ylabel("Random Forest R-squared")
 plt.title("R-squared Using Different Random Forest Number of Leafs")
 plt.show()
+
+# High R-squared value even with moderate number of leaves
+
+# Using Boosting (AdaBoost)
+
+from sklearn.ensemble import AdaBoostRegressor
+
+boost = AdaBoostRegressor(random_state=0, n_estimators=30)
+boost.fit(X_train, y_train)
+print(boost.score(X_train, y_train))
