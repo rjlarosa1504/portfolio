@@ -9,6 +9,7 @@ GitHub portfolio and is for portfolio use only.
 
 import pandas as pd
 import numpy as np
+from scipy import rand
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
@@ -51,4 +52,17 @@ plt.show()
 # Optimal n_neighbors results in overfitting
 # KNN not optimal since high results result from very low n_neighbors
 
-# 
+# Random Forest Regression
+from sklearn.ensemble import RandomForestRegressor
+
+rf_r_squared_arr = []
+for i in range(2, 21, 2):
+    randomForest = RandomForestRegressor(n_estimators =  30, min_samples_leaf = i, random_state = 42)
+    randomForest.fit(X_train, y_train)
+    rf_r_squared_arr.append(randomForest.score(X_train, y_train))
+
+plt.plot(range(2,21,2), rf_r_squared_arr)
+plt.xlabel("Random Forest Number of Leafs")
+plt.ylabel("Random Forest R-squared")
+plt.title("R-squared Using Different Random Forest Number of Leafs")
+plt.show()
