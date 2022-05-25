@@ -1,0 +1,26 @@
+"""  		  	   		  	  			  		 			     			  	 
+Author: Renzo La Rosa
+Date: 05/24/2022
+
+NOTE: This script is to be used for the author's personal use only. It is stored in the author's
+GitHub portfolio and is for portfolio use only.		  	   		  	  			  		 			     			  	 
+""" 
+
+clustering.py uses Kaggle data (insurance.csv) to show insights/anomalies in the data
+
+PCA analysis was done to reduce the dimensions. COS2 values represent the quality of the representative data.
+The COS2 values showed that smoking status had the highest quality of representation, followed by age and bmi.
+
+Clustering analyses were done with 2 to 5 clusters. The plots showed that smoking was the primary factor that
+impacted clustering (and insurance charges), followed by BMI. 
+
+Insights gathered from clustering analysis:
+
+- From a company perspective:
+--- Cluster analysis show that a smoker with high BMI has highest insurance cost. If there is a person that fits
+--- these criteria but have low insurance cost, then this anomaly ought to be addressed. The company is taking on
+--- a higher risk by charging them too low.
+
+- From a personal perspective:
+--- On the opposite spectrum, if there is a person who is non-smoker and low BMI and are paying high insurance charges,
+--- then it may a good opportunity to negotiate insurance charges with current company or shop around for other insurances.
