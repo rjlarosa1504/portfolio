@@ -1,0 +1,30 @@
+"""  		  	   		  	  			  		 			     			  	 
+Author: Renzo La Rosa
+Date: 05/24/2022
+
+NOTE: This script is to be used for the author's personal use only. It is stored in the author's
+GitHub portfolio and is for portfolio use only.		  	   		  	  			  		 			     			  	 
+""" 
+
+regression.py uses Kaggle data (insurance.csv) to demonstrate different types of regression analyses. The
+analyses included are:
+
+1. linear regression
+Simple linear regression is used as the baseline. Future regression analyses attempt at having a better result
+
+2. k-nearest neighbor (KNN)
+A plot was created to find the impact of number of neighbors and R-squared. As expected the lower the number of
+nearest neighbors, the higher the R-squared and regression. Unfortunately, even with nearest neighbor of 2 (a 
+number that would be overfitted anyway) the resulting R-squared did not reach 0.8.
+
+3. random forest regression
+A plot was created to find the impact of leaf size and R-squared. As expected the lower the leaf size, the higher
+the R-squared. In this case however, the R-squared was high for a range of leaf sizes. The author proceeded with 
+a leaf size of 5 with an R-squared value > 0.9
+
+4. AdaBoost regression
+AdaBoost regression resulted in 0.8 < R-square < 0.9.
+
+These results suggest that there may be a difference in insurance charges depending on region or gender. Further analysis
+is needed to prove or refute the hypothesis. Clustering analysis (unsupervised learning) will be done in a different script.
+
