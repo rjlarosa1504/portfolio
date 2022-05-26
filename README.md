@@ -18,7 +18,7 @@ a Data Science Consultant. In my time here, I have developed and continue develo
 spaces. In my spare time, I continue to expand my knowledge through my M.S. in Computer Science specializing in Machine Learning program at 
 Georgia Tech, as well as Udemy courses and personal projects. I am determined to be an expert in the field.
 
-# Portfolio
+# Portfolio - In Progress
 My portfolio consists of concepts that I have used in the past to solve problems whether at work (Rolls-Royce & Deloitte) or graduate projects
 (Georgia Tech). 
 
